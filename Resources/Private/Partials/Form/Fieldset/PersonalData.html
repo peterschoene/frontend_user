@@ -1,0 +1,60 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true" lang="en">
+
+<!--
+* Frontend User Extension
+*
+* @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+* @author      YDT Global Team <typo3@ydt-global.com>
+-->
+
+<f:if condition="{fields -> f:count()} > 0">
+    <fieldset>
+        <legend>
+            <span><f:translate key="personalDataFieldsetLabel"/></span>
+        </legend>
+        <f:for each="{fields}" as="field">
+            <div>
+                <label for="{field -> ydt:format.lowercaseHyphenated()}">
+                    <span><f:translate key="{field}"/></span>
+                </label>
+                <f:if condition="{field} == 'image'">
+                    <f:then>
+                        <f:if condition="{frontendUser.image}">
+                            <f:then>
+                                <div id="{field -> ydt:format.lowercaseHyphenated()}">
+                                    <div>
+                                        <f:media file="{frontendUser.image}"
+                                                 width="{settings.frontendUserImageSize}"
+                                                 alt="{frontendUser.image.originalResource.title}"/>
+                                    </div>
+                                    <div>
+                                        <a href="{f:uri.action(action: 'deleteImage', arguments: {frontendUser: frontendUser, frontendUserImage: frontendUser.image})}">
+                                            <span><f:translate key="deleteImageLinkText"/></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </f:then>
+                            <f:else>
+                                <f:form.upload name="image" id="{field -> ydt:format.lowercaseHyphenated()}"/>
+                            </f:else>
+                        </f:if>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="{field} == 'streetAddress'">
+                            <f:then>
+                                <f:form.textarea property="{field}" id="{field -> ydt:format.lowercaseHyphenated()}" rows="{settings.streetAddressLineNum}"/>
+                            </f:then>
+                            <f:else>
+                                <f:form.textfield property="{field}" id="{field -> ydt:format.lowercaseHyphenated()}"/>
+                            </f:else>
+                        </f:if>
+                    </f:else>
+                </f:if>
+            </div>
+        </f:for>
+    </fieldset>
+</f:if>
+
+</html>

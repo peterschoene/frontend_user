@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Frontend User Extension
+ *
+ * @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+ * @author      YDT Global Team <typo3@ydt-global.com>
+ */
+-->
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" srcLang="en">
+    <file original="EXT:frontend_user/Resources/Private/Language/locallang_be.xlf" source-language="en" target-language="de" datatype="plaintext">
+        <header/>
+        <body>
+             <trans-unit id="LGL.company" resname="LGL.company">
+                <source>Company</source>
+                <target>Firma</target>
+            </trans-unit>
+            <trans-unit id="LGL.title_person" resname="LGL.title_person">
+                <source>Job Title</source>
+                <target>Berufsbezeichnung</target>
+            </trans-unit>
+            <trans-unit id="LGL.name" resname="LGL.name">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="LGL.first_name" resname="LGL.first_name">
+                <source>First name</source>
+                <target>Vorname</target>
+            </trans-unit>
+            <trans-unit id="LGL.middle_name" resname="LGL.middle_name">
+                <source>Middle Name</source>
+                <target>Mittlerer Name</target>
+            </trans-unit>
+            <trans-unit id="LGL.last_name" resname="LGL.last_name">
+                <source>Last name</source>
+                <target>Nachname</target>
+            </trans-unit>
+            <trans-unit id="LGL.address" resname="LGL.address">
+                <source>Street Address</source>
+                <target>Adresse</target>
+            </trans-unit>
+            <trans-unit id="LGL.zip" resname="LGL.zip">
+                <source>Zip Code</source>
+                <target>PLZ</target>
+            </trans-unit>
+            <trans-unit id="LGL.city" resname="LGL.city">
+                <source>City</source>
+                <target>Stadt</target>
+            </trans-unit>
+            <trans-unit id="LGL.country" resname="LGL.country">
+                <source>Country</source>
+                <target>Land</target>
+            </trans-unit>
+            <trans-unit id="LGL.phone" resname="LGL.phone">
+                <source>Phone</source>
+                <target>Telefon</target>
+            </trans-unit>
+            <trans-unit id="LGL.fax" resname="LGL.fax">
+                <source>Fax</source>
+                <target>Fax</target>
+            </trans-unit>
+            <trans-unit id="LGL.email" resname="LGL.email">
+                <source>Email</source>
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="LGL.www" resname="LGL.www">
+                <source>Homepage Url</source>
+                <target>Homepage-URL</target>
+            </trans-unit>
+             <trans-unit id="LGL.image" resname="LGL.image">
+                <source>Image</source>
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="plugin.title" resname="plugin.title">
+                <source>Website User Form</source>
+                <target>Website-Benutzerformular</target>
+            </trans-unit>
+            <trans-unit id="plugin.description" resname="plugin.description">
+                <source>Create/update website user form.</source>
+                <target>Website-Benutzerformular erstellen/aktualisieren.</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.sheets.general" resname="plugin.flexForm.sheets.general">
+                <source>General</source>
+                <target>Allgemein</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.sheets.view" resname="plugin.flexForm.sheets.view">
+                <source>View</source>
+                <target>Aussicht</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.defaultFrontendUserGroupId" resname="plugin.flexForm.settings.defaultFrontendUserGroupId">
+                <source>Default User Group</source>
+                <target>Standardbenutzergruppe</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.frontendUserStoragePid.label" resname="plugin.flexForm.settings.frontendUserStoragePid.label">
+                <source>User Storage Page</source>
+                <target>Benutzerspeicherseite</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.frontendUserImageFolder" resname="plugin.flexForm.settings.frontendUserImageFolder">
+                <source>User Image Folder</source>
+                <target>Benutzerbildordner</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.enableFrontendUserAutoLogin" resname="plugin.flexForm.settings.enableFrontendUserAutoLogin">
+                <source>Log in After Successful User Creation</source>
+                <target>Melden Sie sich nach erfolgreicher Benutzererstellung an</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.enableRedirectToLoginPage" resname="plugin.flexForm.settings.enableRedirectToLoginPage">
+                <source>Redirect to Login Page</source>
+                <target>Weiterleitung zur Anmeldeseite</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.redirectLoginPageId" resname="plugin.flexForm.settings.redirectLoginPageId">
+                <source>Login Page</source>
+                <target>Loginseite</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.enableFrontendUserDeletion" resname="plugin.flexForm.settings.enableFrontendUserDeletion">
+                <source>Enable Deletion of a User</source>
+                <target>Löschen eines Benutzers aktivieren</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.newFrontendUserFormFields" resname="plugin.flexForm.settings.newFrontendUserFormFields">
+                <source>Create User Form Fields</source>
+                <target>Benutzerformularfelder erstellen</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.editFrontendUserFormFields" resname="plugin.flexForm.settings.editFrontendUserFormFields">
+                <source>Edit User Form Fields</source>
+                <target>Benutzerformularfelder bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.streetAddressLineNum.label" resname="plugin.flexForm.settings.streetAddressLineNum.label">
+                <source>Number of Lines in Street Address</source>
+                <target>Anzahl der Zeilen in einer Adresse</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.streetAddressLineNum.description" resname="plugin.flexForm.settings.streetAddressLineNum.description">
+                <source>Range: 1-4</source>
+                <target>Bereich: 1-4.</target>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.frontendUserImageSize" resname="plugin.flexForm.settings.frontendUserImageSize">
+                <source>User Image Size</source>
+                <target>Benutzerbildgröße</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

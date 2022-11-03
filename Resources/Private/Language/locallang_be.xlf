@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Frontend User Extension
+ *
+ * @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+ * @author      YDT Global Team <typo3@ydt-global.com>
+ */
+-->
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" srcLang="en">
+    <file original="EXT:frontend_user/Resources/Private/Language/locallang_be.xlf" source-language="en" datatype="plaintext">
+        <header/>
+        <body>
+             <trans-unit id="LGL.company" resname="LGL.company">
+                <source>Company</source>
+            </trans-unit>
+            <trans-unit id="LGL.title_person" resname="LGL.title_person">
+                <source>Job Title</source>
+            </trans-unit>
+             <trans-unit id="LGL.company" resname="LGL.company">
+                <source>Company</source>
+            </trans-unit>
+            <trans-unit id="LGL.title_person" resname="LGL.title_person">
+                <source>Job Title</source>
+            </trans-unit>
+            <trans-unit id="LGL.name" resname="LGL.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="LGL.first_name" resname="LGL.first_name">
+                <source>First Name</source>
+            </trans-unit>
+            <trans-unit id="LGL.middle_name" resname="LGL.middle_name">
+                <source>Middle Name</source>
+            </trans-unit>
+            <trans-unit id="LGL.last_name" resname="LGL.last_name">
+                <source>Last Name</source>
+            </trans-unit>
+            <trans-unit id="LGL.address" resname="LGL.address">
+                <source>Street Address</source>
+            </trans-unit>
+            <trans-unit id="LGL.zip" resname="LGL.zip">
+                <source>Zip Code</source>
+            </trans-unit>
+            <trans-unit id="LGL.city" resname="LGL.city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="LGL.country" resname="LGL.country">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="LGL.phone" resname="LGL.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="LGL.fax" resname="LGL.fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="LGL.email" resname="LGL.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="LGL.www" resname="LGL.www">
+                <source>Homepage Url</source>
+            </trans-unit>
+            <trans-unit id="LGL.image" resname="LGL.image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="plugin.title" resname="plugin.title">
+                <source>Website User Form</source>
+            </trans-unit>
+            <trans-unit id="plugin.description" resname="plugin.description">
+                <source>Create/update website user form.</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.sheets.general" resname="plugin.flexForm.sheets.general">
+                <source>General</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.sheets.view" resname="plugin.flexForm.sheets.view">
+                <source>View</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.defaultFrontendUserGroupId" resname="plugin.flexForm.settings.defaultFrontendUserGroupId">
+                <source>Default User Group</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.frontendUserStoragePid.label" resname="plugin.flexForm.settings.frontendUserStoragePid.label">
+                <source>User Storage Page</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.frontendUserImageFolder" resname="plugin.flexForm.settings.frontendUserImageFolder">
+                <source>User Image Folder</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.enableFrontendUserAutoLogin" resname="plugin.flexForm.settings.enableFrontendUserAutoLogin">
+                <source>Log in After Successful User Creation</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.enableRedirectToLoginPage" resname="plugin.flexForm.settings.enableRedirectToLoginPage">
+                <source>Redirect to Login Page</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.redirectLoginPageId" resname="plugin.flexForm.settings.redirectLoginPageId">
+                <source>Login Page</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.enableFrontendUserDeletion" resname="plugin.flexForm.settings.enableFrontendUserDeletion">
+                <source>Enable Deletion of a User</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.newFrontendUserFormFields" resname="plugin.flexForm.settings.newFrontendUserFormFields">
+                <source>Create User Form Fields</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.editFrontendUserFormFields" resname="plugin.flexForm.settings.editFrontendUserFormFields">
+                <source>Edit User Form Fields</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.streetAddressLineNum.label" resname="plugin.flexForm.settings.streetAddressLineNum.label">
+                <source>Number of Lines in Street Address</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.streetAddressLineNum.description" resname="plugin.flexForm.settings.streetAddressLineNum.description">
+                <source>Range: 1-4.</source>
+            </trans-unit>
+            <trans-unit id="plugin.flexForm.settings.frontendUserImageSize" resname="plugin.flexForm.settings.frontendUserImageSize">
+                <source>User Image Size</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

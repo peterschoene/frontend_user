@@ -1,0 +1,26 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true" lang="en">
+
+<!--
+* Frontend User Extension
+*
+* @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+* @author      YDT Global Team <typo3@ydt-global.com>
+-->
+
+<f:form.validationResults>
+    <f:if condition="{validationResults.flattenedErrors}">
+        <ul>
+            <f:for each="{validationResults.flattenedErrors}" as="errors" key="propertyPath">
+                <li>{propertyPath}
+                    <ul>
+                        <f:for each="{errors}" as="error">
+                            <li><span>{error}</span></li>
+                        </f:for>
+                    </ul>
+                </li>
+            </f:for>
+        </ul>
+    </f:if>
+</f:form.validationResults>

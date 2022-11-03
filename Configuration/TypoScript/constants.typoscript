@@ -1,0 +1,51 @@
+/**
+* Frontend User Extension
+*
+* @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+* @author      YDT Global Team <typo3@ydt-global.com>
+*/
+plugin.tx_frontenduser_form {
+  view {
+    # cat=plugin.tx_frontenduser_form/file; type=string; label=Path to template root (FE)
+    templateRootPath =
+    # cat=plugin.tx_frontenduser_form/file; type=string; label=Path to template partials (FE)
+    partialRootPath =
+    # cat=plugin.tx_frontenduser_form/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath =
+  }
+
+  settings {
+    # cat=plugin.tx_frontenduser_form/settings; type=int+; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.defaultFrontendUserGroupId
+    defaultFrontendUserGroupId =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=int+; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.frontendUserStoragePid.label
+    frontendUserStoragePid =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=string; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.frontendUserImageFolder
+    frontendUserImageFolder =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=boolean; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.enableFrontendUserAutoLogin
+    enableFrontendUserAutoLogin =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=boolean; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.enableRedirectToLoginPage
+    enableRedirectToLoginPage =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=int+; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.redirectLoginPageId
+    redirectLoginPageId =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=boolean; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.enableFrontendUserDeletion
+    enableFrontendUserDeletion =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=string; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.newFrontendUserFormFields
+    newFrontendUserFormFields =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=string; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.editFrontendUserFormFields
+    editFrontendUserFormFields =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=int; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.streetAddressLineNum.label
+    streetAddressLineNum =
+
+    # cat=plugin.tx_frontenduser_form/settings; type=string; label=LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.frontendUserImageSize
+    frontendUserImageSize = 150
+  }
+}

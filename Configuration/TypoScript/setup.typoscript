@@ -1,0 +1,41 @@
+/**
+* Frontend User Extension
+*
+* @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+* @author      YDT Global Team <typo3@ydt-global.com>
+*/
+plugin.tx_frontenduser_form {
+  view {
+    templateRootPaths {
+      10 = EXT:frontend_user/Resources/Private/Templates/
+      20 = {$plugin.tx_frontenduser_form.view.templateRootPath}
+    }
+
+    partialRootPaths {
+      10 = EXT:frontend_user/Resources/Private/Partials/
+      20 = {$plugin.tx_frontenduser_form.view.partialRootPath}
+    }
+
+    layoutRootPaths {
+      10 = EXT:frontend_user/Resources/Private/Layouts/
+      20 = {$plugin.tx_frontenduser_form.view.layoutRootPath}
+    }
+  }
+
+  settings {
+    # General
+    defaultFrontendUserGroupId = {$plugin.tx_frontenduser_form.settings.defaultFrontendUserGroupId}
+    frontendUserStoragePid = {$plugin.tx_frontenduser_form.settings.frontendUserStoragePid}
+    frontendUserImageFolder = {$plugin.tx_frontenduser_form.settings.frontendUserImageFolder}
+    enableFrontendUserAutoLogin = {$plugin.tx_frontenduser_form.settings.enableFrontendUserAutoLogin}
+    enableRedirectToLoginPage = {$plugin.tx_frontenduser_form.settings.enableRedirectToLoginPage}
+    redirectLoginPageId = {$plugin.tx_frontenduser_form.settings.redirectLoginPageId}
+    enableFrontendUserDeletion = {$plugin.tx_frontenduser_form.settings.enableFrontendUserDeletion}
+
+    # View
+    newFrontendUserFormFields = {$plugin.tx_frontenduser_form.settings.newFrontendUserFormFields}
+    editFrontendUserFormFields = {$plugin.tx_frontenduser_form.settings.editFrontendUserFormFields}
+    streetAddressLineNum = {$plugin.tx_frontenduser_form.settings.streetAddressLineNum}
+    frontendUserImageSize = {$plugin.tx_frontenduser_form.settings.frontendUserImageSize}
+  }
+}

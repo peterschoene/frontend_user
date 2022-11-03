@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Frontend User Extension
+ *
+ * @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+ * @author      YDT Global Team <typo3@ydt-global.com>
+ */
+-->
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.sheets.general
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.defaultFrontendUserGroupId>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.defaultFrontendUserGroupId
+                        </label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items type="array">
+                            </items>
+                            <foreign_table>fe_groups</foreign_table>
+                        </config>
+                    </settings.defaultFrontendUserGroupId>
+                    <settings.frontendUserStoragePid>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.frontendUserStoragePid.label
+                            </label>
+                            <config>
+                                <type>group</type>
+                                <allowed>pages</allowed>
+                                <maxitems>1</maxitems>
+                                <size>1</size>
+                                <minitems>0</minitems>
+                            </config>
+                        </TCEforms>
+                    </settings.frontendUserStoragePid>
+                    <settings.frontendUserImageFolder>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.frontendUserImageFolder
+                        </label>
+                        <config>
+                            <type>group</type>
+                            <internal_type>folder</internal_type>
+                            <maxitems>1</maxitems>
+                            <size>1</size>
+                            <minitems>0</minitems>
+                        </config>
+                    </settings.frontendUserImageFolder>
+                    <settings.enableFrontendUserAutoLogin>
+                        <onChange>reload</onChange>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.enableFrontendUserAutoLogin
+                        </label>
+                        <config>
+                            <type>check</type>
+                            <default>1</default>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <numIndex index="0">
+                                        LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.enabled
+                                    </numIndex>
+                                    <numIndex index="1">1</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </settings.enableFrontendUserAutoLogin>
+                    <settings.enableRedirectToLoginPage>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.enableRedirectToLoginPage
+                        </label>
+                        <displayCond>FIELD:settings.enableFrontendUserAutoLogin:REQ:false</displayCond>
+                        <config>
+                            <type>check</type>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <numIndex index="0">
+                                        LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.enabled
+                                    </numIndex>
+                                    <numIndex index="1">1</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </settings.enableRedirectToLoginPage>
+                    <settings.redirectLoginPageId>
+                        <TCEforms>
+                            <label>
+                                LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.redirectLoginPageId
+                            </label>
+                            <displayCond>FIELD:settings.enableFrontendUserAutoLogin:REQ:false</displayCond>
+                            <config>
+                                <type>group</type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                            </config>
+                        </TCEforms>
+                    </settings.redirectLoginPageId>
+                    <settings.enableFrontendUserDeletion>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.enableFrontendUserDeletion
+                        </label>
+                        <config>
+                            <type>check</type>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <numIndex index="0">
+                                        LLL:EXT:core/Resources/Private/Language/locallang_core.xlf:labels.enabled
+                                    </numIndex>
+                                    <numIndex index="1">1</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </settings.enableFrontendUserDeletion>
+                </el>
+            </ROOT>
+        </sDEF>
+        <s_view>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>
+                        LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.sheets.view
+                    </sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.newFrontendUserFormFields>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.newFrontendUserFormFields
+                        </label>
+                        <config>
+                            <type>select</type>
+                            <itemsProcFunc>Ydt\FrontendUser\Service\FrontendUserFormService->getFieldItems</itemsProcFunc>
+                            <renderType>selectMultipleSideBySide</renderType>
+                            <items type="array">
+                            </items>
+                        </config>
+                    </settings.newFrontendUserFormFields>
+                    <settings.editFrontendUserFormFields>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.editFrontendUserFormFields
+                        </label>
+                        <config>
+                            <type>select</type>
+                            <itemsProcFunc>Ydt\FrontendUser\Service\FrontendUserFormService->getFieldItems</itemsProcFunc>
+                            <renderType>selectMultipleSideBySide</renderType>
+                            <items type="array">
+                            </items>
+                        </config>
+                    </settings.editFrontendUserFormFields>
+                    <settings.streetAddressLineNum>
+                        <label>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.streetAddressLineNum.label
+                        </label>
+                        <description>
+                            LLL:EXT:frontend_user/Resources/Private/Language/locallang_be.xlf:plugin.flexForm.settings.streetAddressLineNum.description
+                        </description>
+                        <config>
+                            <type>input</type>
+                            <eval>int</eval>
+                            <default>2</default>
+                            <range>
+                                <lower>1</lower>
+                                <upper>4</upper>
+                            </range>
+                        </config>
+                    </settings.streetAddressLineNum>
+                </el>
+            </ROOT>
+        </s_view>
+    </sheets>
+</T3DataStructure>

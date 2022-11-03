@@ -1,0 +1,23 @@
+####
+# Frontend User Extension
+#
+# @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+# @author      YDT Global Team <typo3@ydt-global.com>
+####
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Ydt\FrontendUser\:
+    resource: '../Classes/*'
+
+  Ydt\FrontendUser\Authentication\FrontendUserAuthentication:
+    public: true
+
+  Ydt\FrontendUser\EventListener\FrontendUserCreateAfterEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'newFrontendUserAutoLogin'
+        event: Ydt\FrontendUser\Event\FrontendUserCreateAfterEvent

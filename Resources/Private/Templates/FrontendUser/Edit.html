@@ -1,0 +1,101 @@
+<html
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true" lang="en">
+
+<!--
+* Frontend User Extension
+*
+* @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+* @author      YDT Global Team <typo3@ydt-global.com>
+-->
+
+<f:layout name="Form/Default"/>
+
+<f:section name="content">
+    <f:asset.script identifier="editFrontendUserForm" src="EXT:frontend_user/Resources/Public/JavaScript/Form.js"/>
+
+    <f:security.ifAuthenticated>
+        <f:then>
+            <f:form action="update" objectName="frontendUser" object="{frontendUser}" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>
+                        <span><f:translate key="editFrontendUserFormFieldsetLabel"/></span>
+                    </legend>
+                    <f:render partial="Form/ValidationResults"/>
+                    <f:render partial="Form/Fieldset/PersonalData" arguments="{fields: formFields, frontendUser: frontendUser}"/>
+                    <fieldset>
+                        <legend>
+                            <span><f:translate key="generalFieldsetLabel"/></span>
+                        </legend>
+                        <div>
+                            <label for="username">
+                                <span><f:translate key="username"/></span>
+                            </label>
+                            <f:form.textfield property="username" id="username" disabled="disabled" additionalAttributes="{required: 'required'}"/>
+                        </div>
+                        <div>
+                            <label for="change-password">
+                                <span><f:translate key="changePasswordCheckboxLabel"/></span>
+                            </label>
+                            <f:form.checkbox name="changePassword" id="change-password" value="1"/>
+                        </div>
+                        <fieldset id="change-password-fieldset">
+                            <legend>
+                                <span><f:translate key="changePasswordFieldsetLabel"/></span>
+                            </legend>
+                            <div>
+                                <label for="password">
+                                    <span><f:translate key="newPassword"/></span>
+                                </label>
+                                <f:form.password property="password" id="password" value="" additionalAttributes="{required: 'required', autocomplete: 'off'}"/>
+                            </div>
+                            <div>
+                                <label for="password-confirmation">
+                                    <span><f:translate key="newPasswordConfirmation"/></span>
+                                </label>
+                                <f:form.password property="passwordConfirmation" id="password-confirmation" additionalAttributes="{required: 'required', autocomplete: 'off'}"/>
+                            </div>
+                            <div>
+                                <label for="show-password">
+                                    <span><f:translate key="showPasswordCheckboxLabel"/></span>
+                                </label>
+                                <f:form.checkbox name="showPassword" id="show-password" value=""/>
+                            </div>
+                        </fieldset>
+                        <f:form.hidden name="pid" value="{frontendUser.pid}"/>
+                        <f:form.hidden name="uid" value="{frontendUser.uid}"/>
+                    </fieldset>
+
+                    <f:form.submit name="submit" value="{f:translate(key: 'updateFrontendUserButton')}"/>
+
+                    <f:if condition="{settings.enableFrontendUserDeletion}">
+                        <a href="#delete-user-link-wrapper" id="delete-user-link">
+                            <span><f:translate key="deleteFrontendUserLink"/></span>
+                        </a>
+                        <div id="delete-user-link-wrapper">
+                            <f:format.html>
+                                <f:translate key="deleteFrontendUserText" arguments="{0: '{f:uri.action(action: \'delete\', arguments: {frontendUser: frontendUser})}'}"/>
+                            </f:format.html>
+                        </div>
+                    </f:if>
+                </fieldset>
+            </f:form>
+        </f:then>
+        <f:else>
+            <div>
+                <f:format.html>
+                    <f:if condition="{loginPageUrl}">
+                        <f:then>
+                            <f:translate key="authFrontendUserTextWithArgs" arguments="{0: loginPageUrl}"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate key="authFrontendUserText"/>
+                        </f:else>
+                    </f:if>
+                </f:format.html>
+            </div>
+        </f:else>
+    </f:security.ifAuthenticated>
+</f:section>
+
+</html>

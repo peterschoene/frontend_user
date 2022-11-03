@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Frontend User Extension
+ *
+ * @copyright   Copyright (c) 2022 Your Dev Team Global (https://ydt-global.com/)
+ * @author      YDT Global Team <typo3@ydt-global.com>
+ */
+-->
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" srcLang="en">
+    <file original="EXT:frontend_user/Resources/Private/Language/locallang.xlf" source-language="en" datatype="plaintext">
+        <header/>
+        <body>
+            <trans-unit id="username" resname="username">
+                <source>Username</source>
+            </trans-unit>
+            <trans-unit id="password" resname="password">
+                <source>Password</source>
+            </trans-unit>
+            <trans-unit id="passwordConfirmation" resname="passwordConfirmation">
+                <source>Confirm Password</source>
+            </trans-unit>
+            <trans-unit id="company" resname="company">
+                <source>Company</source>
+            </trans-unit>
+            <trans-unit id="jobTitle" resname="jobTitle">
+                <source>Job Title</source>
+            </trans-unit>
+            <trans-unit id="name" resname="name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="firstName" resname="firstName">
+                <source>First Name</source>
+            </trans-unit>
+            <trans-unit id="middleName" resname="middleName">
+                <source>Middle Name</source>
+            </trans-unit>
+            <trans-unit id="lastName" resname="lastName">
+                <source>Last Name</source>
+            </trans-unit>
+            <trans-unit id="streetAddress" resname="streetAddress">
+                <source>Street Address</source>
+            </trans-unit>
+            <trans-unit id="zipCode" resname="zipCode">
+                <source>Zip Code</source>
+            </trans-unit>
+            <trans-unit id="city" resname="city">
+                <source>City</source>
+            </trans-unit>
+            <trans-unit id="country" resname="country">
+                <source>Country</source>
+            </trans-unit>
+            <trans-unit id="phone" resname="phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="email" resname="email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="fax" resname="fax">
+                <source>Fax</source>
+            </trans-unit>
+            <trans-unit id="url" resname="url">
+                <source>Homepage Url</source>
+            </trans-unit>
+            <trans-unit id="image" resname="image">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="validator.digit.notValid" resname="validator.digit.notValid">
+                <source>The given subject is not a valid digit string.</source>
+            </trans-unit>
+            <trans-unit id="validator.object.wrongClass" resname="validator.object.wrongClass">
+                <source>The given object is not an instance of FrontendUser class.</source>
+            </trans-unit>
+            <trans-unit id="validator.property.password.notMatched" resname="validator.property.password.notMatched">
+                <source>Please make sure your passwords match.</source>
+            </trans-unit>
+            <trans-unit id="validator.property.phone.notValid" resname="validator.property.phone.notValid">
+                <source>The given subject is not a valid phone.</source>
+            </trans-unit>
+            <trans-unit id="errorMessage.username.notAvailable" resname="errorMessage.username.notAvailable">
+                <source>Username is not available. Please try another one.</source>
+            </trans-unit>
+            <trans-unit id="errorMessage.username.canNotBeChanged" resname="errorMessage.username.canNotBeChanged">
+                <source>Username can not be changed.</source>
+            </trans-unit>
+             <trans-unit id="errorMessage.password.notMatched" resname="errorMessage.password.notMatched">
+                 <source>Please make sure your passwords match.</source>
+             </trans-unit>
+            <trans-unit id="errorMessage.image.canNotBeSaved" resname="errorMessage.image.canNotBeSaved">
+                <source>Something went wrong while saving the image file.</source>
+            </trans-unit>
+            <trans-unit id="successMessage.frontendUserSaved" resname="successMessage.frontendUserSaved">
+                <source>You saved the user account.</source>
+            </trans-unit>
+            <trans-unit id="newFrontendUserFormFieldsetLabel" resname="newFrontendUserFormFieldsetLabel">
+                <source>Create New User</source>
+            </trans-unit>
+            <trans-unit id="generalFieldsetLabel" resname="generalFieldsetLabel">
+                <source></source>
+            </trans-unit>
+            <trans-unit id="showPasswordCheckboxLabel" resname="showPasswordCheckboxLabel">
+                <source>Show Password</source>
+            </trans-unit>
+            <trans-unit id="createFrontendUserButton" resname="createFrontendUserButton">
+                <source>Create User</source>
+            </trans-unit>
+            <trans-unit id="editFrontendUserFormFieldsetLabel" resname="editFrontendUserFormFieldsetLabel">
+                <source>Edit User</source>
+            </trans-unit>
+            <trans-unit id="changePasswordCheckboxLabel" resname="changePasswordCheckboxLabel">
+                <source>Change Password</source>
+            </trans-unit>
+            <trans-unit id="changePasswordFieldsetLabel" resname="changePasswordFieldsetLabel">
+                <source>Change Password</source>
+            </trans-unit>
+            <trans-unit id="newPassword" resname="newPassword">
+                <source>Password</source>
+            </trans-unit>
+            <trans-unit id="newPasswordConfirmation" resname="newPasswordConfirmation">
+                <source>Confirm Password</source>
+            </trans-unit>
+            <trans-unit id="updateFrontendUserButton" resname="updateFrontendUserButton">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="deleteFrontendUserLink" resname="deleteFrontendUserLink">
+                <source>Delete User</source>
+            </trans-unit>
+            <trans-unit id="deleteFrontendUserText" resname="deleteFrontendUserText">
+                <source><![CDATA[If you are sure that you want to delete this user account, follow <a href="%s">the link</a>.]]></source>
+            </trans-unit>
+            <trans-unit id="authFrontendUserTextWithArgs" resname="authFrontendUserTextWithArgs">
+                <source><![CDATA[Please <a href="%s">log in</a> with the provided credentials to view the user account.]]></source>
+            </trans-unit>
+            <trans-unit id="authFrontendUserText" resname="authFrontendUserText">
+                <source>Please log in with the provided credentials to view the user account.</source>
+            </trans-unit>
+            <trans-unit id="personalDataFieldsetLabel" resname="personalDataFieldsetLabel">
+                <source>Personal Data</source>
+            </trans-unit>
+            <trans-unit id="deleteImageLinkText" resname="deleteImageLinkText">
+                <source>Delete Image</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
