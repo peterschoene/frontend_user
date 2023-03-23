@@ -175,6 +175,15 @@ class FrontendUserController extends ActionController
         $newFrontendUser->setPid($pid);
 
         $password = $newFrontendUser->getPassword();
+        if (strlen($password) < 10 || strlen($password) > 32 || !preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$/', $password)) {
+            $this->addFlashMessage(
+                $this->getTranslation('errorMessage.password.complexity'),
+                '',
+                FlashMessage::ERROR
+            );
+            return (new ForwardResponse('new'))
+                ->withArguments(['forwarded' => true]);
+        }
         $hashedPassword = $this->generateHashedPassword($password);
         $newFrontendUser->setPassword($hashedPassword);
 
@@ -402,7 +411,6 @@ class FrontendUserController extends ActionController
     protected function generateHashedPassword(string $password): string
     {
         $hashInstance = $this->passwordHashFactory->getDefaultHashInstance('FE');
-
         return $hashInstance->getHashedPassword($password);
     }
 
